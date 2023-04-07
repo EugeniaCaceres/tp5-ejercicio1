@@ -1,14 +1,53 @@
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JUGAR</title>
+  </head>
+  <body>
+    <main>
+      <section class="d-flex justify-content-center align-items-center vh-100">
+        <div class="mx-auto">
+          <div class="d-grid gap-2 col-12 mx-auto my-5">
+            <button class="btn btn-primary" type="button">Jugar</button>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="input-numerohelp" class="form-label"
+                >Ingrese el número:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="inpun-numero"
+                aria-describedby="input-numero-help"
+              />
+              <div id="input-numero-help" class="form-text">
+                Adivine el numero magico que cree que salio.
+              </div>
+            </div>
+            <div class="d-grid gap-2 col-12 mx-auto my-5">
+              <button class="btn btn-primary" type="button">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
