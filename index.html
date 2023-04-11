@@ -6,11 +6,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,36 +14,83 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>JUGAR</title>
+    <title>Números mágicos</title>
   </head>
   <body>
+
     <main>
-      <section class="d-flex justify-content-center align-items-center vh-100">
-        <div class="mx-auto">
-          <div class="d-grid gap-2 col-12 mx-auto my-5">
-            <button class="btn btn-primary" type="button">Jugar</button>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
-          <form>
-            <div class="mb-3">
-              <label for="input-numerohelp" class="form-label"
-                >Ingrese el número:</label
-              >
-              <input
-                type="number"
-                class="form-control"
-                id="inpun-numero"
-                aria-describedby="input-numero-help"
-              />
-              <div id="input-numero-help" class="form-text">
-                Adivine el numero magico que cree que salio.
-              </div>
-            </div>
+        </div>
+      </div>
+
+
+      <section class="d-flex justify-content-center align-items-center vh-100">
+        <div class="mx-auto text-center">
+          <h1 class="py-1">Magic Numbers!!</h1>
+          <div class="p-3" id="contenedor-blanco">
+            <h3 class="py-0">¿Puedes adivinar el número mágico?</h3>
             <div class="d-grid gap-2 col-12 mx-auto my-5">
-              <button class="btn btn-primary" type="button">Enviar</button>
+              <button
+                id="boton-iniciar-juego"
+                class="btn btn-primary"
+                type="button"
+                onclick="toogleFormulario()"
+              >
+                Jugar
+              </button>
             </div>
-          </form>
+            <form id="formulario_juego">
+              <div class="mb-3">
+                <label for="input-numerohelp" class="form-label"
+                  >Ingrese un número:</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="input-numero"
+                  aria-describedby="input-numero-help"
+                  required
+                />
+                <div id="input-numero-help" class="form-text text-dark">
+                  <p class="m-0">Adivina, adiviandor.. ¿Tendrás suerte hoy?</p>
+                </div>
+              </div>
+              <div class="d-grid gap-2 col-12 mx-auto my-5">
+                <button
+                  id="boton-enviar-num"
+                  class="btn btn-lila"
+                  type="button"
+                  onclick="enviar_numero()"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
+
+    <script src="js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
