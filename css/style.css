@@ -1,19 +1,45 @@
 #formulario_juego {
-  visibility: hidden;
+  display: hidden;
 }
 
-.my-alert-box {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: block;
-  padding: 50px;
-  background-color: #fff;
-  border: 1px solid #000;
+
+
+body{
+    /*overflow: hidden;*/
+    background-image: url("/img/num-backgruond-3.jpg");
+    background-size: cover;
 }
 
+h1{
+  font-family: 'Righteous', cursive;
+    color:rgb(55, 2, 85);
+    text-shadow: 0 0 05px white,
+    0 0 10px white,
+    0 0 15px white,
+    0 0 25px white,
+    0 0 30px white;
+}
+
+h3{
+  color: #fff;
+  text-shadow: 0 0 01px #000,
+  0 0 03px #000,
+  0 0 04px #000;
+}
+
+#contenedor-blanco{
+    background-color:rgb(190, 255, 106);
+    border-radius: 10px;
+    border: 2px solid rgba(211, 255, 149, 0.915);
+}
+
+.btn-lila{
+  background-color: rgb(181, 76, 247);
+  border-color: rgb(230, 157, 251);
+  color:#fff
+}
+
+/*Brillitos
 .spark {
   position: absolute;
   top: 0;
@@ -39,3 +65,4 @@
     opacity: 0;
   }
 }
+
