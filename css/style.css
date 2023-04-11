@@ -1,0 +1,41 @@
+#formulario_juego {
+  visibility: hidden;
+}
+
+.my-alert-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.spark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: explode 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(3);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
