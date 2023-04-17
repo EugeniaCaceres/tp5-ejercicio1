@@ -5,6 +5,7 @@
 📋 El repositorio contiene el ejercicio N°1, donde se realizo un juego llamado "números mágicos". Pertenece al quinto trabajo práctico de DOM y BOM en JavaScript. Para Rolling Code, de la comisión 41 i-2022.
 
 # Demo
+https://inspiring-rolypoly-8ce332.netlify.app
 
 ## Pre-requisitos:
 - Sin prerequisitos.
